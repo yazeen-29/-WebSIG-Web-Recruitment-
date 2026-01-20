@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#111a2e;
+    padding: 10px 20px; 
+    border:1px solid rgba(203, 225, 225, 0.08);
+}
+
+.logo{
+    font-size:24px;
+    color: #ffffff;
+}
+
+.nav-links{
+    gap: 20px;
+    display: flex;
+}
+.nav-links a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight:600;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+.nav-links a:hover{
+    color:#ff6f61;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.about-section{
+    margin-top: 28px;
+    padding: 24px;
+    background: #e2e8f0;
+    border-radius: 14px;
+}
+.about-section h2{
+    margin-bottom: 16px;
+    color:#111a2e;
+    font-size: 28px;
+}
+.about-section p{
+    font-size: 18px;
+    color:#555;
+    line-height: 1.8;
+    opacity: 0.9;
+    margin-bottom: 16px;
+}
+
+.primary-btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff6f61;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+.primary-btn:hover{
+    background: #cc372a;
+    opacity: 0.9;
+}
+.cards-selection{
+    margin:26px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    flex:1;
+    min-width: 280px;
+    background:#fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-section{
+    margin-top: 28px;
+    padding: 24px;
+    background: #e2e8f0;
+    border-radius: 14px;
+}
+.contact-section a{
+    color:#2563eb;
+}
+.contact-section a:hover{
+    text-decoration: underline;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background:#111a2e;
+    color:#fff;
+    margin-top: 40px;
+    opacity:0.8;
+}
+@media (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
